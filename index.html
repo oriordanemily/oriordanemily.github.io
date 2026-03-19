@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="Personal portfolio website">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero section-reveal">
+            <div class="hero-content">
+                <h1 class="hero-title">Crafting <span class="gradient-text">Digital</span> <br> Experiences.</h1>
+                <p class="hero-subtitle">I'm a developer and designer passionate about creating stunning, performant web applications that users love.</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about section-reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card about-card">
+                <div class="about-text">
+                    <p>Hello! I am someone who loves blending technology and aesthetics to build amazing products. I specialize in front-end development, focusing on delivering intuitive and responsive user interfaces.</p>
+                    <p>When I'm not coding, I'm usually exploring new design trends or contributing to open-source projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-reveal">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="projects-grid">
+                <div class="glass-card project-card">
+                    <div class="project-content">
+                        <h3>Project Vibe</h3>
+                        <p>A beautifully designed web application utilizing modern glassmorphism and smooth animations.</p>
+                        <a href="#" class="project-link">Explore Area</a>
+                    </div>
+                </div>
+                <div class="glass-card project-card">
+                    <div class="project-content">
+                        <h3>Neo Dashboard</h3>
+                        <p>An intricate and responsive dark-mode dashboard with real-time data visualization components.</p>
+                        <a href="#" class="project-link">Explore Area</a>
+                    </div>
+                </div>
+                <div class="glass-card project-card">
+                    <div class="project-content">
+                        <h3>AI Assistant</h3>
+                        <p>A conversational interface design bridging human-like interaction with AI.</p>
+                        <a href="#" class="project-link">Explore Area</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="glass-card contact-card">
+                <p>I'm currently open for new opportunities or collaborations.</p>
+                <a href="mailto:hello@example.com" class="cta-button">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> My Portfolio. Built with vibe.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
