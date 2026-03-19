@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Emily O'Riordan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav class="navbar">
         <a href="index.html" class="logo">E. O'R.</a>
@@ -20,28 +24,130 @@
 
     <main>
         <h1 class="section-title">Projects</h1>
-        
+
+        <div style="font-size: 1.1rem; margin-bottom: 2.5rem; color: var(--text-muted); line-height: 1.8;">
+            <p style="margin-bottom: 1rem;">My research focuses on developing next-generation AI methods for weather and
+                climate prediction, with an emphasis on physical realism, high-resolution modelling, and real-world
+                deployment.</p>
+            <p>This work spans foundational machine learning research, operational forecasting systems, and
+                community-led environmental monitoring.</p>
+        </div>
+
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem;">
+
             <div class="card">
-                <h3 class="card-title">Data Visualization Pipeline</h3>
-                <p class="card-meta">Python, React, D3.js</p>
-                <p style="margin-bottom: 1.5rem;">An open-source pipeline that automatically ingests CSV datasets and generates interactive, embeddable charts.</p>
-                <a href="#" class="btn btn-outline">Source Code</a>
+                <h3 class="card-title">DeepWeather</h3>
+                <p class="card-meta">AI-enhanced Numerical Weather Prediction for Aotearoa New Zealand</p>
+                <p style="margin-bottom: 1rem;">DeepWeather is a research programme developing hybrid AI–physics weather
+                    prediction systems tailored to the unique meteorology of Aotearoa New Zealand.</p>
+                <p style="margin-bottom: 1rem;">Traditional Numerical Weather Prediction (NWP) models are
+                    computationally expensive and often struggle to resolve fine-scale variability, particularly in
+                    regions with complex terrain and coastlines. DeepWeather addresses this by combining dynamical
+                    models with machine learning, enabling higher-resolution, more efficient, and more adaptable
+                    forecasts.</p>
+                <p style="margin-bottom: 0.5rem; font-weight: 500;">Current work focuses on:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+                    <li>Coupling AI models with dynamical systems (e.g. WRF) to enhance spatial detail and forecast
+                        skill</li>
+                    <li>Learning corrections to model biases and unresolved processes</li>
+                    <li>Evaluating performance on extreme weather events and regional variability</li>
+                </ul>
+                <p>A key component of the project is ensuring that models are validated against real-world,
+                    high-resolution observations, particularly in regions most vulnerable to extreme weather.</p>
             </div>
 
             <div class="card">
-                <h3 class="card-title">Academic Theme for Jekyll</h3>
-                <p class="card-meta">HTML, CSS, Ruby</p>
-                <p style="margin-bottom: 1.5rem;">A lightweight, highly readable static site theme designed specifically for academics and researchers.</p>
-                <a href="#" class="btn btn-outline">Demo Page</a>
+                <h3 class="card-title">Spectral Machine Learning for Physical Systems</h3>
+                <p class="card-meta">Beyond Fourier: learning in alternative spectral representations</p>
+                <p style="margin-bottom: 1rem;">Many modern AI weather models rely on Fourier transforms, which impose
+                    global smoothness and can limit the representation of sharp gradients and localised extremes.</p>
+                <p style="margin-bottom: 1rem;">This project investigates whether alternative spectral representations —
+                    including wavelets and other localised basis functions — can improve the fidelity of AI-based
+                    forecasting systems.</p>
+                <p style="margin-bottom: 0.5rem; font-weight: 500;">Core research questions:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+                    <li>Can localised spectral methods better capture extreme events and fine-scale structure?</li>
+                    <li>How should neural networks operate directly in spectral space?</li>
+                    <li>What loss functions (e.g. power spectrum–based) best preserve physically meaningful structure?
+                    </li>
+                </ul>
+                <p style="margin-bottom: 0.5rem; font-weight: 500;">This work includes:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+                    <li>Designing architectures that operate in transform space (FFT / wavelet / hybrid)</li>
+                    <li>Developing physically informed loss functions (e.g. PSD alignment)</li>
+                    <li>Systematic comparison across climatology, extremes, and regional domains</li>
+                </ul>
+                <p>The goal is to build spectral AI models that are both mathematically principled and operationally
+                    useful.</p>
             </div>
-            
+
             <div class="card">
-                <h3 class="card-title">ML Predictive Model</h3>
-                <p class="card-meta">TensorFlow, Scikit-learn</p>
-                <p style="margin-bottom: 1.5rem;">A neural network built to predict regional climate anomalies based on Historical weather APIs.</p>
-                <a href="#" class="btn btn-outline">View Notebook</a>
+                <h3 class="card-title">Mātaki Marangai</h3>
+                <p class="card-meta">Community-led rainfall monitoring and data sovereignty</p>
+                <p style="margin-bottom: 1rem;">Mātaki Marangai is a community-driven rainfall monitoring initiative
+                    based in Tairāwhiti, developed in collaboration with schools, scientists, and local partners.</p>
+                <p style="margin-bottom: 0.5rem; font-weight: 500;">The project deploys:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+                    <li>~100 rain gauges across households</li>
+                    <li>Automatic weather stations at local kura</li>
+                    <li>Data collection tools co-designed with students</li>
+                </ul>
+                <p style="margin-bottom: 0.5rem; font-weight: 500;">Its goals are to:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+                    <li>Improve understanding of highly variable rainfall patterns in a vulnerable region</li>
+                    <li>Build local capability in environmental data collection and analysis</li>
+                    <li>Support decision-making through locally owned data</li>
+                </ul>
+                <p style="margin-bottom: 1rem;">Tairāwhiti experiences strong spatial variability in rainfall due to its
+                    terrain and exposure, making forecasting particularly challenging. By generating dense, local
+                    observations, Mātaki Marangai creates a high-resolution dataset that complements traditional
+                    meteorological networks.</p>
+                <p style="margin-bottom: 0.5rem; font-weight: 500;">Importantly, the project embeds:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+                    <li>Kaupapa Māori approaches, including integration with maramataka</li>
+                    <li>Community ownership of data and tools</li>
+                    <li>STEM engagement for rangatahi</li>
+                </ul>
+                <p>The data collected also plays a role in validating AI-based forecasts developed in DeepWeather,
+                    linking community science directly to cutting-edge modelling.</p>
             </div>
+
+
+            <div class="card">
+                <h3 class="card-title">Data Assimilation with Neural Processes</h3>
+                <p class="card-meta">Learning from sparse, irregular environmental observations</p>
+                <p style="margin-bottom: 1rem;">Environmental observations are inherently sparse, noisy, and unevenly
+                    distributed. This project explores the use of neural processes and related probabilistic models for
+                    data assimilation.</p>
+                <p style="margin-bottom: 0.5rem; font-weight: 500;">Focus areas:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+                    <li>Learning continuous representations from irregular observations</li>
+                    <li>Combining observational data with model outputs</li>
+                    <li>Quantifying uncertainty in predictions</li>
+                </ul>
+                <p style="margin-bottom: 0.5rem; font-weight: 500;">This work is particularly relevant for:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-muted);">
+                    <li>Weather forecasting in data-sparse regions</li>
+                    <li>Integrating citizen science datasets</li>
+                    <li>Real-time environmental monitoring</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div
+            style="margin-top: 3rem; background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; margin-bottom: 2rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-family: 'Lora', serif; font-weight: 500;">Broader
+                Impact</h3>
+            <p style="margin-bottom: 0.5rem; font-weight: 500;">Across all projects, the focus is on delivering:</p>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                <li>Operationally relevant tools for forecasting and climate analysis</li>
+                <li>Open-source methods and datasets</li>
+                <li>Equitable and community-engaged science, particularly in Aotearoa New Zealand and the Pacific</li>
+            </ul>
+            <p style="color: var(--text-muted);">This work sits at the intersection of machine learning, geophysical
+                science, and societal impact, with the aim of improving how we understand and respond to weather and
+                climate risk.</p>
         </div>
     </main>
 
@@ -51,4 +157,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
