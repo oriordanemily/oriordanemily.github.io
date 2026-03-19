@@ -1,34 +1,20 @@
-// Set current year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
+// Set current year in footer dynamically
+const yearElement = document.getElementById('year');
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
 
-// Intersection Observer for scroll animations
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.15
-};
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.section-reveal').forEach(section => {
-    observer.observe(section);
-});
-
-// Subtle navbar background change on scroll
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(5, 5, 5, 0.95)';
-        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
-    } else {
-        navbar.style.background = 'rgba(5, 5, 5, 0.8)';
-        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.08)';
+// Fade-in animation for main content when switching pages
+document.addEventListener('DOMContentLoaded', () => {
+    const mainContent = document.querySelector('main');
+    if (mainContent) {
+        mainContent.style.opacity = '0';
+        mainContent.style.transform = 'translateY(15px)';
+        mainContent.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        
+        setTimeout(() => {
+            mainContent.style.opacity = '1';
+            mainContent.style.transform = 'translateY(0)';
+        }, 50);
     }
 });

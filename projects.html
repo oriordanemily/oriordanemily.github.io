@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Emily O'Riordan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">E. O'R.</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="section-title">Projects</h1>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem;">
+            <div class="card">
+                <h3 class="card-title">Data Visualization Pipeline</h3>
+                <p class="card-meta">Python, React, D3.js</p>
+                <p style="margin-bottom: 1.5rem;">An open-source pipeline that automatically ingests CSV datasets and generates interactive, embeddable charts.</p>
+                <a href="#" class="btn btn-outline">Source Code</a>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Academic Theme for Jekyll</h3>
+                <p class="card-meta">HTML, CSS, Ruby</p>
+                <p style="margin-bottom: 1.5rem;">A lightweight, highly readable static site theme designed specifically for academics and researchers.</p>
+                <a href="#" class="btn btn-outline">Demo Page</a>
+            </div>
+            
+            <div class="card">
+                <h3 class="card-title">ML Predictive Model</h3>
+                <p class="card-meta">TensorFlow, Scikit-learn</p>
+                <p style="margin-bottom: 1.5rem;">A neural network built to predict regional climate anomalies based on Historical weather APIs.</p>
+                <a href="#" class="btn btn-outline">View Notebook</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Emily O'Riordan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
